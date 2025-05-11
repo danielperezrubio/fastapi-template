@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.router import api_router
 from fastapi.openapi.docs import get_swagger_ui_html
-from app.core.config import settings
+from app.config import settings
 
 
 app = FastAPI(docs_url=None, title=settings.TITLE)
